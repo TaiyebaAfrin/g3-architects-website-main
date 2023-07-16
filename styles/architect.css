@@ -21,13 +21,12 @@
 /* header start */
 header{
     background: rgba(255, 144, 14, 0.10);
-    
+    padding: 70px 240px;
 }
 /* nav ar vhitore display sathe justify niche ty 2 ta 2 passe geche */
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 50px 240px;
 }
 
 /* 45px 3*16=48  or 2.8rem*/
@@ -56,11 +55,11 @@ nav li a {
 }
 
 /* banner styles */
+
 .banner-content{
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 50px;
 }
 
 /* 4rem= 16px*4= */
@@ -68,13 +67,39 @@ nav li a {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
+    padding-top: 20px;
 }
 .banner-description{
     color: #727272;
     padding: 18px 0px;
 }
-/* 
-.banerr img{
+
+.banner img{
     margin-top: 20px;
-    width: 50%;
-} */
+    width: 100%;
+}
+
+/* responsive media query */
+/* mobile responsiveness */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+        text-align: center;
+    }
+    nav{
+        flex-direction: column;
+        
+    }
+
+ 
+}
+
+/* Tab responsiveness */
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
