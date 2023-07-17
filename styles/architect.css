@@ -1,7 +1,7 @@
 /* font add */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-
+/* Primary for some common section */
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +18,16 @@
     cursor: pointer;
     border: 0;
 }
+
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+} 
+
+
+
+
 /* header start */
 header{
     background: rgba(255, 144, 14, 0.10);
@@ -30,11 +40,7 @@ nav{
 }
 
 /* 45px 3*16=48  or 2.8rem*/
-.nav-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #131313;
-}    
+   
 
 
 nav > ul{
@@ -69,7 +75,7 @@ nav li a {
     color: #131313;
     padding-top: 20px;
 }
-.banner-description{
+.text-lighy-gray{
     color: #727272;
     padding: 18px 0px;
 }
@@ -81,7 +87,7 @@ nav li a {
 /* main section start */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 /* teams style */
@@ -120,12 +126,17 @@ main{
         padding: 20px;
         text-align: center;
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
         
     }
-
- 
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 /* Tab responsiveness */
